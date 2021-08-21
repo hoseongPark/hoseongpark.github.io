@@ -738,6 +738,11 @@ function googleTranslateElementInit() {
     // Listen the theme toggle event
     sw.addEventListener('change', function(event) {
       handleThemeToggle(event.target.checked);
+      
+      // Disqus Refresh
+      if (document.readyState == 'complete') {
+        DISQUS.reset({ reload: true, config: disqus_config });
+        }
     });
 
     if (nightModeOption == 'auto') {
