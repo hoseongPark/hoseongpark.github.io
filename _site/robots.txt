@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://hoseongpark.github.io/sitemap.xml
